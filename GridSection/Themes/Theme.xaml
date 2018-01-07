@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="SectionBackgroundColour">#1fff</Color>
+    <Color x:Key="LabelForegroundColour">#ddbebec0</Color>
+
+    <SolidColorBrush x:Key="SectionBackgroundBrush"
+                     Color="{StaticResource SectionBackgroundColour}" />
+    <SolidColorBrush x:Key="LabelForegroundBrush"
+                     Color="{StaticResource LabelForegroundColour}" />
+
+</ResourceDictionary>
