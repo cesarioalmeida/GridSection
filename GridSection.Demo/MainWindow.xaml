@@ -28,16 +28,22 @@
             <controls:GridSection.Header>
                 <controls:GridSectionHeader HorizontalContentAlignment="Right"
                                             Label="Latest News">
-                    <controls:GridSectionHeaderButton Glyph="Assets/Eye.png"
-                                                      ToolTip="View" />
-                    <controls:GridSectionHeaderButton Glyph="Assets/Erase.png"
-                                                      ToolTip="Delete" />
+                    <controls:GridSectionHeader.Items>
+                        <controls:GridSectionHeaderButton Glyph="Assets/Eye.png"
+                                                          ToolTip="View" />
+                        <controls:GridSectionHeaderButton Glyph="Assets/Erase.png"
+                                                          ToolTip="Delete" />
+                    </controls:GridSectionHeader.Items>
                 </controls:GridSectionHeader>
             </controls:GridSection.Header>
             <controls:GridSection.Content>
-                <Grid Background="DarkSlateGray">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
                     <TextBlock FontSize="30"
-                               Text="RAPINAS" />
+                               Text="Rapinas" />
                 </Grid>
             </controls:GridSection.Content>
         </controls:GridSection>
