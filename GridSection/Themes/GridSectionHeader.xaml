@@ -30,7 +30,15 @@
                                        FontSize="{TemplateBinding FontSize}"
                                        Foreground="{StaticResource LabelForegroundBrush}"
                                        Text="{TemplateBinding Label}" />
-                            <ItemsControl Grid.Column="1" />
+                            <ItemsControl Grid.Column="1"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          ItemsSource="{TemplateBinding ItemsSource}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapPanel />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                            </ItemsControl>
                         </Grid>
                     </Border>
                 </ControlTemplate>

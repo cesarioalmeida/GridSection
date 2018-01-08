@@ -3,7 +3,7 @@
     using System.Windows;
     using System.Windows.Controls;
 
-    public class GridSectionHeader : ContentControl
+    public class GridSectionHeader : ItemsControl
     {
         public static readonly DependencyProperty LabelProperty = DependencyProperty.Register(
             "Label",

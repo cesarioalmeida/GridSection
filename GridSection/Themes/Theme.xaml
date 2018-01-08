@@ -3,10 +3,13 @@
 
     <Color x:Key="SectionBackgroundColour">#1fff</Color>
     <Color x:Key="LabelForegroundColour">#ddbebec0</Color>
+    <Color x:Key="ButtonForegroundColour">#ddbebec0</Color>
 
     <SolidColorBrush x:Key="SectionBackgroundBrush"
                      Color="{StaticResource SectionBackgroundColour}" />
     <SolidColorBrush x:Key="LabelForegroundBrush"
                      Color="{StaticResource LabelForegroundColour}" />
+    <SolidColorBrush x:Key="ButtonForegroundBrush"
+                     Color="{StaticResource ButtonForegroundColour}" />
 
 </ResourceDictionary>
