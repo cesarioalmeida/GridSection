@@ -14,12 +14,13 @@
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="4" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
+            <RowDefinition Height="4" />
             <RowDefinition Height="2*" />
-            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <controls:GridSection Grid.Row="0"
@@ -38,12 +39,37 @@
             </controls:GridSection.Header>
             <controls:GridSection.Content>
                 <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
                     <TextBlock FontSize="30"
-                               Text="Rapinas" />
+                               Text="latest news" />
+                </Grid>
+            </controls:GridSection.Content>
+        </controls:GridSection>
+
+        <controls:GridSection Grid.Row="0"
+                              Grid.Column="2">
+            <controls:GridSection.Header>
+                <controls:GridSectionHeader HorizontalContentAlignment="Right"
+                                            Label="Other News" />
+            </controls:GridSection.Header>
+            <controls:GridSection.Content>
+                <Grid>
+                    <TextBlock FontSize="30"
+                               Text="old news" />
+                </Grid>
+            </controls:GridSection.Content>
+        </controls:GridSection>
+
+        <controls:GridSection Grid.Row="2"
+                              Grid.Column="2">
+            <controls:GridSection.Header>
+                <controls:GridSectionHeader HorizontalContentAlignment="Right"
+                                            Label="More" />
+            </controls:GridSection.Header>
+            <controls:GridSection.Content>
+                <Grid>
+                    <Button Width="100"
+                            Height="40"
+                            Content="more" />
                 </Grid>
             </controls:GridSection.Content>
         </controls:GridSection>
