@@ -73,9 +73,11 @@
             </controls:GridSection.Header>
             <controls:GridSection.Content>
                 <Grid>
-                    <Button Width="100"
-                            Height="40"
-                            Content="more" />
+                    <TextBlock HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontSize="30"
+                               Foreground="BurlyWood"
+                               Text="more content" />
                 </Grid>
             </controls:GridSection.Content>
         </controls:GridSection>

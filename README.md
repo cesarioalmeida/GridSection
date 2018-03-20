@@ -1,5 +1,7 @@
 # GridSection
-A simple WPF Section control
+A simple WPF Section control, with a header -enriched with label and control buttons- and content.
+
+![alt text](https://i.imgur.com/iIazthk.png "GridSection")
 
 ## Use
 ```
