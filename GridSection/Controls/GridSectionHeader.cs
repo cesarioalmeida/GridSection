@@ -20,6 +20,12 @@
                 default(List<FrameworkElement>),
                 FrameworkPropertyMetadataOptions.AffectsRender | FrameworkPropertyMetadataOptions.AffectsMeasure));
 
+        public static readonly DependencyProperty ShowLineProperty = DependencyProperty.Register(
+            "ShowLine",
+            typeof(bool),
+            typeof(GridSectionHeader),
+            new PropertyMetadata(true));
+
         static GridSectionHeader()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(GridSectionHeader), new FrameworkPropertyMetadata(typeof(GridSectionHeader)));
@@ -29,6 +35,12 @@
         {
             get => (string)this.GetValue(LabelProperty);
             set => this.SetValue(LabelProperty, value);
+        }
+
+        public bool ShowLine
+        {
+            get => (bool)this.GetValue(ShowLineProperty);
+            set => this.SetValue(ShowLineProperty, value);
         }
 
         public List<FrameworkElement> Items
