@@ -7,7 +7,7 @@
         Title="GridSection Demo"
         Width="1024"
         Height="700"
-        Background="#f222"
+        Background="#fdde"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d">
 
@@ -69,7 +69,13 @@
                               Grid.Column="2">
             <controls:GridSection.Header>
                 <controls:GridSectionHeader HorizontalContentAlignment="Right"
-                                            Label="More" />
+                                            Label="More">
+                    <controls:GridSectionHeader.Items>
+                        <controls:GridSectionHeaderTextButton Text="Add Stock" />
+                        <controls:GridSectionHeaderTextButton ShowBorder="True"
+                                                              Text="Add Dividend" />
+                    </controls:GridSectionHeader.Items>
+                </controls:GridSectionHeader>
             </controls:GridSection.Header>
             <controls:GridSection.Content>
                 <Grid>
