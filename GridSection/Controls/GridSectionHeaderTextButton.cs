@@ -15,7 +15,7 @@
             "ShowBorder",
             typeof(bool),
             typeof(GridSectionHeaderTextButton),
-            new PropertyMetadata(default(bool)));
+            new PropertyMetadata(true));
 
         static GridSectionHeaderTextButton()
         {

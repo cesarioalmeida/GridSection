@@ -71,9 +71,9 @@
                 <controls:GridSectionHeader HorizontalContentAlignment="Right"
                                             Label="More">
                     <controls:GridSectionHeader.Items>
-                        <controls:GridSectionHeaderTextButton Text="Add Stock" />
-                        <controls:GridSectionHeaderTextButton ShowBorder="True"
-                                                              Text="Add Dividend" />
+                        <controls:GridSectionHeaderTextButton IsEnabled="False"
+                                                              Text="Add Stock" />
+                        <controls:GridSectionHeaderTextButton Text="Add Dividend" />
                     </controls:GridSectionHeader.Items>
                 </controls:GridSectionHeader>
             </controls:GridSection.Header>

@@ -7,6 +7,7 @@
 
     <Style TargetType="{x:Type controls:GridSectionHeaderTextButton}">
         <Setter Property="Margin" Value="2,0,0,2" />
+        <Setter Property="Focusable" Value="False" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type controls:GridSectionHeaderTextButton}">
@@ -16,7 +17,7 @@
                             Background="Transparent"
                             BorderBrush="Transparent"
                             BorderThickness="0,0,0,1"
-                            CornerRadius="0"
+                            CornerRadius="6"
                             Opacity="0.7">
                         <TextBlock x:Name="TextButton"
                                    Margin="8,2"
@@ -32,6 +33,9 @@
                         <Trigger Property="ShowBorder" Value="True">
                             <Setter TargetName="BorderButton" Property="Background" Value="#699a" />
                             <Setter TargetName="BorderButton" Property="BorderBrush" Value="#7333" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="BorderButton" Property="Opacity" Value="0.4" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
