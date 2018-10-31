@@ -44,6 +44,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\GridSectionHeaderTextButton.cs" />
     <Compile Include="Controls\GridSectionHeaderButton.cs" />
     <Compile Include="Controls\GridSectionHeader.cs" />
     <Compile Include="Controls\GridSection.cs" />
@@ -51,6 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\GridSectionHeaderTextButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

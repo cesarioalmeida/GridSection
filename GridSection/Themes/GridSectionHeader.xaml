@@ -7,14 +7,17 @@
 
     <Style TargetType="{x:Type controls:GridSectionHeader}">
         <Setter Property="BorderThickness" Value="0,0,0,1" />
-        <Setter Property="BorderBrush" Value="#4fff" />
+        <Setter Property="BorderBrush" Value="#3333" />
         <Setter Property="HorizontalContentAlignment" Value="Right" />
+        <Setter Property="Height" Value="32" />
         <Setter Property="FontFamily" Value="Segoe UI" />
         <Setter Property="FontSize" Value="13" />
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type controls:GridSectionHeader}">
-                    <Border Margin="5,0,5,5"
+                    <Border x:Name="LineBorder"
+                            Margin="5,0,5,5"
                             Background="Transparent"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
@@ -33,6 +36,8 @@
                                        Text="{TemplateBinding Label}" />
                             <ItemsControl Grid.Column="1"
                                           HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="Bottom"
+                                          IsTabStop="False"
                                           ItemsSource="{TemplateBinding Items}">
                                 <ItemsControl.ItemsPanel>
                                     <ItemsPanelTemplate>
@@ -42,6 +47,11 @@
                             </ItemsControl>
                         </Grid>
                     </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="ShowLine" Value="False">
+                            <Setter TargetName="LineBorder" Property="BorderBrush" Value="Transparent" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
