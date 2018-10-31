@@ -8,6 +8,7 @@
     <Style TargetType="{x:Type controls:GridSectionHeaderTextButton}">
         <Setter Property="Margin" Value="2,0,0,2" />
         <Setter Property="Focusable" Value="False" />
+        <Setter Property="IsTabStop" Value="False" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type controls:GridSectionHeaderTextButton}">
