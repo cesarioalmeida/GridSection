@@ -12,7 +12,8 @@
                 <ControlTemplate TargetType="{x:Type controls:GridSection}">
                     <Border Background="{StaticResource SectionBackgroundBrush}"
                             BorderBrush="Transparent"
-                            BorderThickness="0">
+                            BorderThickness="0"
+                            CornerRadius="6">
                         <Grid Margin="5"
                               HorizontalAlignment="Stretch"
                               VerticalAlignment="Stretch">
