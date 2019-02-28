@@ -2,8 +2,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Color x:Key="SectionBackgroundColour">#bfff</Color>
-    <Color x:Key="LabelForegroundColour">#d444</Color>
-    <Color x:Key="ButtonForegroundColour">#d444</Color>
+    <Color x:Key="LabelForegroundColour">#d333</Color>
+    <Color x:Key="ButtonForegroundColour">#d333</Color>
     <Color x:Key="ButtonLightForegroundColour">#d777</Color>
     <Color x:Key="ButtonDarkForegroundColour">#d222</Color>
 
