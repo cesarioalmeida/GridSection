@@ -1,15 +1,16 @@
-﻿<Window x:Class="GridSection.Demo.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:controls="clr-namespace:GridSection.Controls;assembly=GridSection"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Title="GridSection Demo"
-        Width="1024"
-        Height="700"
-        Background="#fdde"
-        WindowStartupLocation="CenterScreen"
-        mc:Ignorable="d">
+﻿<Window
+    x:Class="GridSection.Demo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:GridSection.Controls;assembly=GridSection"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="GridSection Demo"
+    Width="1024"
+    Height="700"
+    Background="#fdde"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
 
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
@@ -23,67 +24,60 @@
             <RowDefinition Height="2*" />
         </Grid.RowDefinitions>
 
-        <controls:GridSection Grid.Row="0"
-                              Grid.RowSpan="3"
-                              Grid.Column="0">
+        <controls:GridSection
+            Grid.Row="0"
+            Grid.RowSpan="3"
+            Grid.Column="0">
             <controls:GridSection.Header>
-                <controls:GridSectionHeader HorizontalContentAlignment="Right"
-                                            Label="Latest News">
+                <controls:GridSectionHeader HorizontalContentAlignment="Right" Label="Latest News">
                     <controls:GridSectionHeader.Items>
-                        <controls:GridSectionHeaderButton Glyph="Assets/Eye.png"
-                                                          ToolTip="View" />
-                        <controls:GridSectionHeaderButton Glyph="Assets/Erase.png"
-                                                          ToolTip="Delete" />
+                        <controls:GridSectionHeaderButton Glyph="Assets/Eye.png" ToolTip="View" />
+                        <controls:GridSectionHeaderButton Glyph="Assets/Erase.png" ToolTip="Delete" />
                     </controls:GridSectionHeader.Items>
                 </controls:GridSectionHeader>
             </controls:GridSection.Header>
             <controls:GridSection.Content>
                 <Grid>
-                    <TextBlock FontSize="30"
-                               Text="latest news" />
+                    <TextBlock FontSize="30" Text="latest news" />
                 </Grid>
             </controls:GridSection.Content>
         </controls:GridSection>
 
-        <controls:GridSection Grid.Row="0"
-                              Grid.Column="2">
+        <controls:GridSection Grid.Row="0" Grid.Column="2">
             <controls:GridSection.Header>
-                <controls:GridSectionHeader HorizontalContentAlignment="Right"
-                                            Label="Other News"
-                                            ShowLine="False">
+                <controls:GridSectionHeader
+                    HorizontalContentAlignment="Right"
+                    Label="Other News"
+                    ShowLine="False">
                     <controls:GridSectionHeader.Items>
-                        <controls:GridSectionHeaderButton Glyph="Assets/Eye.png"
-                                                          ToolTip="View" />
+                        <controls:GridSectionHeaderButton Glyph="Assets/Eye.png" ToolTip="View" />
                     </controls:GridSectionHeader.Items>
                 </controls:GridSectionHeader>
             </controls:GridSection.Header>
             <controls:GridSection.Content>
                 <Grid>
-                    <TextBlock FontSize="30"
-                               Text="old news" />
+                    <TextBlock FontSize="30" Text="old news" />
                 </Grid>
             </controls:GridSection.Content>
         </controls:GridSection>
 
-        <controls:GridSection Grid.Row="2"
-                              Grid.Column="2">
+        <controls:GridSection Grid.Row="2" Grid.Column="2">
             <controls:GridSection.Header>
-                <controls:GridSectionHeader HorizontalContentAlignment="Right"
-                                            Label="More">
+                <controls:GridSectionHeader HorizontalContentAlignment="Right" Label="More">
                     <controls:GridSectionHeader.Items>
-                        <controls:GridSectionHeaderTextButton IsEnabled="False"
-                                                              Text="Add Stock" />
-                        <controls:GridSectionHeaderTextButton Text="Add Dividend" />
+                        <controls:GridSectionHeaderTextButton IsEnabled="False" Text="button 1" />
+                        <controls:GridSectionHeaderTextButton Text="button 2" />
                     </controls:GridSectionHeader.Items>
                 </controls:GridSectionHeader>
             </controls:GridSection.Header>
             <controls:GridSection.Content>
                 <Grid>
-                    <TextBlock HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               FontSize="30"
-                               Foreground="BurlyWood"
-                               Text="more content" />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="30"
+                        Foreground="BurlyWood"
+                        Text="more content" />
                 </Grid>
             </controls:GridSection.Content>
         </controls:GridSection>
